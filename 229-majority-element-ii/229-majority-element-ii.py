@@ -3,7 +3,5 @@ class Solution:
         n = len(nums)
         result = []
         distinct_elements = set(nums)
-        for distinct_element in distinct_elements:
-            if nums.count(distinct_element) > n/3:
-                result.append(distinct_element)
+        result = [element for element in distinct_elements if nums.count(element) > n/3]
         return result
