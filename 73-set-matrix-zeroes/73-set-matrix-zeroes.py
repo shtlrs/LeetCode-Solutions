@@ -14,8 +14,7 @@ class Solution:
                 if cell == 0:
                     target_rows.add(row_index)
                     target_cols.add(col_index)
-        print(target_rows)
-        print(target_cols)
+                    
         for row_index, row in enumerate(matrix):
             if row_index in target_rows:
                 row = [0] * n_cols
